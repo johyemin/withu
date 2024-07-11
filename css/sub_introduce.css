@@ -137,7 +137,6 @@ header .headerI .ham span {
 #section_01 .container-fluid{
     max-width: 100%;
     height: 100%;
-    background-color: #E8E8E8;
 }
 
 #section_01 .sec1_title{
@@ -179,7 +178,6 @@ header .headerI .ham span {
 #section_02 .container-fluid{
     max-width: 100%;
     height: 100%;
-    background-color: #E8E8E8;
 }
 
 #section_02 .sec2_title{
@@ -228,7 +226,7 @@ header .headerI .ham span {
 #section_03 .container-fluid{
     max-width: 100%;
     height: 100%;
-    background-color: #E8E8E8;
+
 }
 
 #section_03 .sec3_title{
@@ -624,8 +622,16 @@ footer .container .f_row .right .text .f_mid {
     footer .container .f_row .right .text{
         font-size: 0.75rem;
     }
+
+    
+    #h_submenu ul li{
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-height : 400px) {
     /* 모바일 가로 버전 */
+    #h_submenu ul li{
+        margin-bottom: 24px;
+    }
 }

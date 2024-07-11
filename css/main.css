@@ -745,6 +745,10 @@ footer .container .f_row .right .text .f_mid {
         width: 120px;
     }
 
+    #section_02 .container:nth-child(2){
+        margin-bottom: 0;
+    }
+
     #section_03 .sec3_title h2 {
         font-size: 1.2rem;
     }
@@ -791,8 +795,27 @@ footer .container .f_row .right .text .f_mid {
     footer .container .f_row .right .text{
         font-size: 0.75rem;
     }
+
+    #h_submenu ul li{
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-height : 400px) {
     /* 모바일 가로 버전 */
+
+    #section_05 .sec5_title{
+        width: 510px;
+        margin: auto;
+        margin-bottom: 32px;
+    }
+    #section_05 .sec5_title p br{
+        display: none;
+    }
+
+    
+
+    #h_submenu ul li{
+        margin-bottom: 24px;
+    }
 }

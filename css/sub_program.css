@@ -791,9 +791,35 @@ footer .container .f_row .right .text .f_mid {
         padding: 0 12px;
     } */
 
-    
+    #section_03 .sec3_part_1 {
+        grid-template-rows: repeat(3, 1fr);
+    }
 
-    
+    #section_03 .sec3_part_1 .learning_title {
+        grid-column: 1 / 7;
+        grid-row: 2 / 3;
+    }
+
+    #section_03 .sec3_part_1 .learning_text_1 {
+        grid-column: 1/ 7;
+        grid-row: 3 / 4;
+    }
+
+    #section_03 .sec3_part_1 {
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #section_03 .sec3_part_2 .learning_img_pen {
+        grid-column: 1 / 7;
+        grid-row: 1 / 2;
+        background-position-x: left;
+    }
+
+    #section_03 .sec3_part_2 .learning_text_2 {
+        grid-column: 1 / 7;
+        grid-row: 2 / 3;
+    }
+
     footer .f_main .left .f_logo figure img{
         width: 150px;
     }
@@ -801,8 +827,15 @@ footer .container .f_row .right .text .f_mid {
     footer .container .f_row .right .text{
         font-size: 0.75rem;
     }
+
+    #h_submenu ul li{
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-height : 400px) {
     /* 모바일 가로 버전 */
+    #h_submenu ul li{
+        margin-bottom: 24px;
+    }
 }
