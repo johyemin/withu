@@ -1,0 +1,798 @@
+@import url(./reset.css);
+
+@font-face {
+
+
+    font-family: 'notosans';
+    src: url(../font/NotoSansKR-Regular.ttf);
+
+    font-family: 'soyo_regular';
+    src: url(../font/SOYO\ Maple\ Regular.ttf);
+
+    font-family: 'soyo_bold';
+    src: url(../font/SOYO\ Maple\ Bold.ttf);
+
+
+}
+
+:root {
+    --maincolor--: #F8B430;
+    --subcolor--: #859E8B;
+    --subcolor3--: #EBEBEB;
+    --f_color--: #333333;
+
+
+    --mfont--: 'soyo_regular';
+    --fontBold--: 'soyo_bold';
+    --bfont-: 'notosans';
+
+}
+
+body {
+    font-family: var(--bfont-);
+}
+
+.t_hidden {
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header {
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 99;
+}
+
+header .headerI {
+    width: 100%;
+    max-width: 1140px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .headerI h1 {
+    margin-left: 35px;
+}
+
+header .headerI ul {
+    display: flex;
+    /* display: none; */
+}
+
+header .headerI ul li {
+    font-size: 16px;
+    margin: 0 35px;
+    font-weight: 600;
+    font-family: var(--fontBold--);
+}
+
+header .headerI ul li a:hover {
+    color: #0076B0;
+    transition: 0.3s;
+}
+
+header .headerI .ham {
+    width: 40px;
+    height: 25px;
+    margin-right: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+header .headerI .ham span {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    background-color: var(--maincolor--);
+
+}
+
+#main_banner {
+    position: relative;
+    margin-bottom: 230px;
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/main_banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#main_banner .main_text {
+    position: absolute;
+    top: 30%;
+    left: 18%;
+}
+
+#main_banner .main_text h2 {
+    font-family: var(--fontBold--);
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    line-height: 150%;
+}
+
+#main_banner .main_text p {
+    color: #fff;
+    line-height: 150%;
+}
+
+/* main banner */
+
+#section_01 {
+    margin-bottom: 230px;
+}
+
+#section_01 .sec1_title span {
+    font-weight: 600;
+}
+
+#section_01 .sec1_title h2 {
+    margin: 48px 0;
+    font-family: var(--fontBold--);
+    font-size: 2rem;
+}
+
+#section_01 .sec1_title p {
+    line-height: 160%;
+}
+
+#section_01 .sec1_title p:nth-child(1) {
+    margin-bottom: 32px;
+}
+
+/* section01 */
+
+#section_02 {
+    width: 100%;
+    /* height: 773px; */
+    background-color: var(--subcolor--);
+    margin-bottom: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#section_02 .sec2_title {
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+
+#section_02 .sec2_title span {
+    font-weight: 600;
+}
+
+#section_02 .sec2_title h2 {
+    font-family: var(--fontBold--);
+    font-size: 2rem;
+    margin-top: 8px;
+}
+
+#section_02 .container:nth-child(2) {
+    margin-bottom: 100px;
+}
+
+#section_02 .sec2_img {
+    margin-bottom: 85px;
+}
+
+#section_02 .sec2_img figure img {
+    border-radius: 100%;
+}
+
+#section_02 .sec2_contents .sec2_text {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-family: var(--fontBold--);
+}
+
+#section_03 {
+    margin-bottom: 230px;
+
+}
+
+#section_03 .sec3_title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+#section_03 .sec3_title span {
+    font-weight: 600;
+}
+
+#section_03 .sec3_title h2 {
+    font-family: var(--fontBold--);
+    font-size: 2rem;
+    margin-top: 8px;
+}
+
+#section_03 .sec3_top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+#section_03 .row {
+    margin-bottom: 48px;
+}
+
+#section_03 .sec3_top .sec3_text h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+
+#section_03 .sec3_top .sec3_text p {
+    line-height: 160%;
+}
+
+#section_03 .sec3_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+#section_03 .sec3_bottom .sec3_text1 {
+    margin-bottom: 90px;
+}
+
+#section_03 .sec3_bottom .sec3_text1 h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+
+#section_03 .sec3_bottom .sec3_text1 p {
+    line-height: 160%;
+}
+
+#section_03 .sec3_bottom .sec3_text2 h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+
+#section_03 .sec3_bottom .sec3_text2 p {
+    line-height: 160%;
+}
+
+#section_04 {
+    margin-bottom: 230px;
+    background-color: var(--subcolor3--);
+
+}
+
+#section_04 .sec4_title {
+    text-align: center;
+    margin-bottom: 80px;
+    padding-top: 60px;
+}
+
+
+#section_04 .sec4_title span {
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+#section_04 .sec4_title h2 {
+    font-family: var(--fontBold--);
+    font-size: 2rem;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+#section_04 .sec4_title p {
+    line-height: 150%;
+}
+
+#section_04 .container {
+    padding-bottom: 100px;
+}
+
+#section_05 {
+    margin-bottom: 230px;
+
+}
+
+#section_05 .sec5_title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#section_05 .sec5_title span {
+    font-weight: 600;
+}
+
+#section_05 .sec5_title h2 {
+    font-family: var(--fontBold--);
+    font-size: 2rem;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+#section_05 .sec5_title p {
+    line-height: 150%;
+}
+
+#section_05 .sec5_text {
+    margin-top: 36px;
+    text-align: center;
+}
+
+#section_05 .sec5_text h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+#section_05 .sec5_contents .sec5_text p {
+    line-height: 150%;
+}
+
+#section_05 .calender {
+    height: 140px;
+    margin-top: 160px;
+    background-color: #813F00;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 240px;
+}
+
+#section_05 .calender .bookmark {
+    position: absolute;
+    top: 0;
+    left: 5%;
+
+}
+
+#section_05 .calender .dignose_text {
+    margin-left: 15%;
+}
+
+#section_05 .calender .dignose_text .dig_1 {
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+footer {
+    width: 100%;
+    height: 380px;
+    background-color: var(--f_color--);
+    color: #fff;
+
+}
+
+footer .container {
+    width: 100%;
+    height: 100%;
+}
+
+footer .container .f_row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer .container .f_row .right .text .f_mid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 64px 0;
+}
+
+#h_submenu{
+    width: 50%;
+    height: 100vh;
+    background-color: var(--subcolor3--);
+    color: var(--maincolor--);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 999;
+    font-size: 1.5rem;
+    padding: 50px;
+    display: none;
+    flex-direction: column;
+}
+
+#h_submenu span{
+    align-self: flex-end;
+}
+
+#h_submenu ul{
+    width: 90%;
+    height: 50vh;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#h_submenu ul li{
+    width: 100%;
+    position: relative;
+    font-family: var(--fontBold--);
+}
+
+#top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: var(--subcolor--);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 99;
+}
+
+#top:hover {
+    background-color: var(--maincolor--);
+}
+
+@media screen and (max-width : 1200px) {
+    #main_banner .main_text h2 {
+        font-size: 2rem;
+        margin-bottom: 32px;
+    }
+
+    #section_01 .sec1_title h2 {
+        font-size: 1.7rem;
+        margin-top: 8px;
+        margin-bottom: 32px;
+    }
+
+    #section_01 .sec1_title p br {
+        display: none;
+    }
+
+    #section_02 .sec2_title h2 {
+        font-size: 1.7rem;
+    }
+
+    #section_02 .sec2_contents {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #section_02 .sec2_img {
+        margin-bottom: 52px;
+    }
+
+    #section_02 .sec2_img figure img {
+        width: 180px;
+    }
+
+    #section_02 .sec2_text h3 {
+        font-size: 1.5rem;
+    }
+
+    #section_03 .sec3_title h2 {
+        font-size: 1.7rem;
+    }
+
+    #section_03 .sec3_top .sec3_text h2 {
+        font-size: 1.5rem;
+    }
+
+    #section_03 .sec3_bottom .sec3_text1 h2,
+    #section_03 .sec3_bottom .sec3_text2 h2 {
+        font-size: 1.5rem;
+    }
+
+    #section_03 .sec3_bottom .sec3_text1 {
+        margin-bottom: 36px;
+    }
+
+    #section_04 .sec4_title h2 {
+        font-size: 1.7rem;
+    }
+
+    #section_05 .sec5_title h2 {
+        font-size: 1.7rem;
+    }
+
+    #section_05 .sec5_contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #section_05 .sec5_contents .sec5_img figure img {
+        height: 150px;
+    }
+
+    footer .container .f_row .right .text .f_mid {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    footer .container .f_row .right .text .f_mid p:nth-child(2) {
+        margin: 32px 0;
+    }
+
+}
+
+
+@media screen and (max-width : 991px) {
+
+    header .headerI ul {
+        display: none;
+    }
+
+    header .headerI .ham {
+        display: flex;
+    }
+
+    #section_01 .sec1_title p {
+        margin-bottom: 32px;
+    }
+
+    #section_02 .sec2_img {
+        margin-bottom: 32px;
+    }
+
+    #section_02 .item1 {
+        margin-bottom: 100px;
+    }
+
+    #section_03 .sec3_img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #section_05 .item1{
+        margin-bottom: 100px;
+    }
+
+    #section_05 .calender .bookmark figure img{
+        width: 50px;
+    }
+
+    #section_05 .calender .dignose_text{
+        margin-left: 20%;
+    }
+
+    footer .right .text p:nth-child(1){
+        line-height: 150%;
+    }
+
+    footer .container .f_row .right .text .f_mid{
+        margin: 32px 0;
+    }
+}
+
+@media screen and (max-width : 767px){
+    #main_banner {
+        margin-bottom: 120px;
+    }
+
+    #section_01, #section_02, #section_03, #section_04, #section_05 {
+        margin-bottom: 120px;
+    }
+    
+    #section_05 .calender {
+        margin-top: 120px;
+        margin-bottom: 0;
+    }
+
+    #section_01 .sec1_title h2{
+        font-size: 1.5rem;
+    }
+
+    #section_02 .sec2_title h2{
+        font-size: 1.5rem;
+    }
+
+    #section_02 .item1{
+        margin-bottom: 48px;
+    }
+
+    #section_02 .sec2_text h3 {
+        font-size: 1.2rem;
+    }
+
+    #section_03 .sec3_title h2 {
+        font-size: 1.5rem;
+    }
+
+    #section_03 .sec3_top .sec3_text h2{
+        font-size: 1.2rem;
+    }
+
+    #section_03 .sec3_bottom .sec3_text1 h2{
+        font-size: 1.2rem;
+        margin-top: 32px;
+        margin-bottom: 20px;
+    }
+    
+    
+    #section_03 .sec3_bottom .sec3_text2 h2{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    
+    #section_04 .sec4_title h2{
+        font-size: 1.5rem;
+    }
+
+    #section_05 .sec5_title h2 {
+        font-size: 1.5rem;
+    }
+
+    #section_05 .sec5_contents .sec5_img figure img {
+        height: 100px;
+    }
+
+    #section_05 .sec5_text h3{
+        font-size: 1.2rem;
+    }
+    
+    footer .f_main .left .f_logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 60px 0;
+    }
+
+    footer{
+        height: fit-content;
+    }
+
+    footer .container .f_row .right .text{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    footer .container .f_row .right .text .f_mid {
+        display: flex;
+        align-items: center;
+        margin: 24px 0;
+    }
+
+    footer .container .f_row .right .text .f_mid p:nth-child(2){
+        margin: 24px 0;
+    }
+}
+
+@media screen and (max-width : 575px) {
+    #main_banner .main_text h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #main_banner .main_text p {
+        text-align: center;
+    }
+
+    #section_02 .sec2_contents{
+        margin-bottom: 60px;
+    }
+
+    #section_04 .sec4_title p br{
+        display: none;
+    }
+
+    #section_05 .sec5_title p br{
+        display: none;
+    }
+
+    #section_05 .sec5_contents {
+        margin-bottom: 60px;
+    }
+    
+}
+
+@media screen and (max-width : 400px) {
+    header .headerI h1 img{
+        width: 120px;
+    }
+
+    #main_banner .main_text{
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+    }
+    #section_01 .sec1_title h2 {
+        font-size: 1.2rem;
+    }
+
+    #section_02 .sec2_title h2{
+        font-size: 1.2rem;
+    }
+
+    #section_02 .sec2_img figure img {
+        width: 120px;
+    }
+
+    #section_03 .sec3_title h2 {
+        font-size: 1.2rem;
+    }
+
+    #section_03 .sec3_top .sec3_text h2{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #section_03 .sec3_bottom .sec3_text1 h2, #section_03 .sec3_bottom .sec3_text2 h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #section_04 .sec4_title h2{
+        font-size: 1.2rem;
+    }
+
+    #section_05 .sec5_title h2 {
+        font-size: 1.2rem;
+    }
+
+    #section_05 .calender {
+        height: 120px;
+        margin-top: 32px;
+    }
+
+    #section_05 .calender .bookmark {
+        width: 100px;
+    }
+
+    #section_05 .calender .bookmark figure img{
+        width: 45px;
+    }
+
+    #section_05 .calender .dignose_text p:nth-child(2){
+        font-size: 0.8rem;
+    }
+
+    footer .f_main .left .f_logo figure img{
+        width: 150px;
+    }
+
+    footer .container .f_row .right .text{
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-height : 400px) {
+    /* 모바일 가로 버전 */
+}
