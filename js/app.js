@@ -41,24 +41,23 @@ $(function () {
         window.scrollTo({top : 0, behavior: 'smooth'}); 
       });
 
-    $(".ham").on({
-        click: function () {
-            $("#h_submenu").css({
-                display: 'flex'
-            }),
-                $("#h_submenu").animate({
-                    right: '0px'
-                })
-        }
-    });
 
-    $("#h_submenu span").on({
-        click: function () {
-            $("#h_submenu").animate({
-                right: '-100%'
-            })
+    const toggleHam = document.getElementsByClassName("ham");
+    const subMenu = document.getElementById("h_submenu")
+
+
+    $(toggleHam).click(function(){
+        $(this).toggleClass('open');
+
+        if($(this).hasClass('open')){
+            $(subMenu).addClass('active')
+        } else {
+            $(subMenu).removeClass('active')
         }
-    });
+    })
+
+
+    
 
     $(".reception").on({
         click: function () {
@@ -96,8 +95,14 @@ $(function () {
         }
     })
 
+    $(".thum").mouseover(function(){
+        $(this).css('opacity', '1')
+    })
 
-
+    
+    $(".thum").mouseout(function(){
+        $(this).css('opacity', '0.5')
+    })
 
     /////
 });
